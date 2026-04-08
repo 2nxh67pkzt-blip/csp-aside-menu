@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color--gray-txt: #7E7E82;
+    --color--border-left: #41F6D7;
+    --color--black-txt: #1B1C21;
+    --color--background: #ffffff;
+    --color--text-hover: #FF3E79;
+    --color--aside-shadow: #454F7E;
+}  
+
+body {
+    max-width: 768px;
+    height: 100%;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+}
+
+.aside {
+    padding: 10px;
+    position: relative;
+    max-width: 320px;
+    min-height: 1024px;
+    box-shadow: 2px 0px 20px var(--color--aside-shadow);
+}
+
+.aside__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__btns__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.aside__btns button {
+    text-decoration: none;
+    border: 0px;
+}
+
+.aside__btns button:hover {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 19.9rem;
+}
+
+.nav__list {
+    margin-top: 2rem;
+}
+
+.nav__list__h2 {
+    font-size: 16px;
+    color: var(--color--gray-txt);
+    position: relative;
+    padding-left: 31px;
+    
+}
+
+
+.nav__list__h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 32px;
+    background-color: var(--color--border-left);
+    left: -26px;
+    top: -7px;
+    border-radius: 30px;
+}
+
+.nav__list li {
+    list-style: none;
+    margin: 2rem;
+    font-weight: 500;
+}
+
+.nav__list li a {
+    text-decoration: none;
+    color: var(--color--black-txt);
+}
+
+.nav__list li a:hover {
+    cursor: pointer;
+    color: var(--color--text-hover);
+}
+
+.menu__footer {
+    margin: 10px;
+}
+
+.menu__footer__btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.menu__footer__btns button {
+    border: 0px;
+}
+
+.menu__footer__btns button:hover {
+    cursor: pointer;
+}
+
+.menu__footer__mail {
+    font-weight: 500;
+    color: var(--color--black-txt);
+    margin-bottom: 10px;
+}
+
+.menu__footer__number {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu__footer__lang-switch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.menu__footer__lang-switch button {
+    border: 0px;
+}
+
+.menu__footer__lang-switch button:hover {
+    color: var(--color--gray-txt);
+}
