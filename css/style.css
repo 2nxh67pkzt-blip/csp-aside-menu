@@ -24,7 +24,7 @@ body {
     padding: 10px;
     position: relative;
     max-width: 320px;
-    min-height: 1024px;
+    min-height: 100vh;
     box-shadow: 2px 0px 20px var(--color--aside-shadow);
 }
 
@@ -44,6 +44,7 @@ body {
 .aside__btns button {
     text-decoration: none;
     border: 0px;
+    background-color: var(--color--background);
 }
 
 .aside__btns button:hover {
@@ -55,7 +56,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 19.9rem;
 }
 
 .nav__list {
@@ -100,7 +100,13 @@ body {
 }
 
 .menu__footer {
+    position: absolute;
+    bottom: 1rem;
     margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
 }
 
 .menu__footer__btns {
@@ -113,6 +119,7 @@ body {
 
 .menu__footer__btns button {
     border: 0px;
+    background-color: var(--color--background);
 }
 
 .menu__footer__btns button:hover {
@@ -141,8 +148,10 @@ body {
 
 .menu__footer__lang-switch button {
     border: 0px;
+    background-color: var(--color--background);
 }
 
 .menu__footer__lang-switch button:hover {
     color: var(--color--gray-txt);
+    cursor: pointer;
 }
